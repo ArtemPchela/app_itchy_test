@@ -1,0 +1,54 @@
+.header {
+  min-height: 36px;
+  padding: 20px 0 437px;
+  background: url("../../../images/bubbles@3x.png") 64% 88% no-repeat;
+  background-size: 120%;
+}
+.header__nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 15px 5px;
+}
+.header__logo {
+  width: 90px;
+}
+.header__logo_text {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.content_intro {
+  padding: 255px 0 0 134px;
+}
+.content_intro_title {
+  font: Bold 58px/77px Poppins;
+  letter-spacing: 0.58px;
+}
+.content_intro_title_text {
+  font: Italic 22px/29px Poppins;
+  letter-spacing: 0.88px;
+  margin-top: 17px;
+}
+
+.phone_wrapper {
+  padding-top: 10px;
+  position: relative;
+}
+
+.phone_img {
+  width: 520px;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: -111px;
+}
+
+/*# sourceMappingURL=style.module.css.map */

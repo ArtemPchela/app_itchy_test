@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import styles from "./style.module.scss";
 import {Link} from "react-router-dom";
 import burgerClose from './burgerImg/burgerClose.png';
-import burger from './burgerImg/burger.png';
+import burger from './burgerImg/burger.svg';
 
 
 class NavMobile extends Component {

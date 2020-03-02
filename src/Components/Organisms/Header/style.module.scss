@@ -1,37 +1,26 @@
 .header {
   min-height: 36px;
-  padding: 36px 0 437px;
-  background: url("../../../images/bubbles@3x.png") 64.0% 88% no-repeat;
+  padding: 36px 0 500px;
+  background: url("../../../images/bubbles@3x.png") 57% 84% no-repeat;
   background-size: 120%;
   position: relative;
-  @media(max-width: 1199px)  {
-    min-height: 34px;
-    padding: 34px 0 437px;
-    background: url("../../../images/bubbles@3x.png") 64.0% 88% no-repeat;
-    background-size: 120%;
-    position: relative;
-  }
-  @media(max-width: 991px) {
-    padding: 15px 25px;
-  }
-
   &__nav_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
-    @media(max-width: 1199px)  {
+    @media(max-width: 1199px) {
       padding: 15px 25px;
     }
     @media(max-width: 991px) {
       padding: 15px 25px;
-      background: url("../../../images/bubbles@3x.png") 64.0% 88% no-repeat;
     }
   }
 
   &__logo {
     width: 90px;
+
     &_text {
       font-size: 26px;
       font-weight: 700;
@@ -51,21 +40,38 @@
       font: Bold 58px/77px Poppins;
       letter-spacing: 0.58px;
 
-
-    &_text {
-      font: Italic 22px/29px Poppins;
-      letter-spacing: 0.88px;
-      margin-top: 17px;
-    }
+      &_text {
+        font: Italic 22px/29px Poppins;
+        letter-spacing: 0.88px;
+        margin-top: 17px;
+      }
     }
   }
-
 }
 
+.content_intro {
+  @media (min-width: 1200px) {
+    padding: 255px 0 0 110px;
+  }
+  @media(min-width: 992px) and (max-width: 1199.98px) {
+    padding: 255px 0 0 110px;
+  }
+  @media(min-width: 768px) and (max-width: 991.98px) {
+    padding: 255px 0 0 50px;
+  }
+  @media(min-width: 576px) and (max-width: 767.98px) {
+    padding: 255px 0 0 50px;
+  }
+
+  @media (max-width: 575.98px) {
+
+  }
+}
 .phone_wrapper {
   padding-top: 10px;
   position: relative;
 }
+
 .phone_img {
   width: 520px;
   height: auto;

@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 
 export default function Nav({links}) {
     return(
-        <nav className={`${styles.nav} d-none d-md-block`}>
+        <nav className={`${styles.nav}`}>
             {links.map(element =>
-                <Link to={element.href}
+                <Link to=""
                       key={element.href}
                       url={element.href}
                       className={`${styles.nav_item}`}>

@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+
+  &_item {
+    margin-left: 46px;
+    letter-spacing: 0.18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+  }
+}

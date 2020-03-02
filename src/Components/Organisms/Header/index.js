@@ -3,7 +3,8 @@ import {Link} from "react-router-dom";
 import links from "../../../links";
 import styles from "./style.module.scss";
 import Nav from "../../Molecules/Nav";
-import phone from "../../../images/phone@3x.png"
+import NavMobile from "../../Molecules/NavMobile";
+import phone from "../../../images/phone@3x.png";
 
 
 class Header extends Component {
@@ -11,12 +12,13 @@ class Header extends Component {
         return (
             <header className={`${styles.header}`}>
                 <div className={`${styles.header__nav_wrapper}`}>
-                    <div className={`${styles.header__logo}`}>
+                    <div className={`${styles.header__logo} d-none d-md-block`}>
                         <Link className={`${styles.header__logo_text}`} to="/">
                             itchy
                         </Link>
                     </div>
                     <Nav links={links}/>
+                    <NavMobile links={links}/>
                 </div>
                 <div className="container">
                     <div className="row">
@@ -35,7 +37,6 @@ class Header extends Component {
                     </div>
                 </div>
             </header>
-
         )
     }
 }

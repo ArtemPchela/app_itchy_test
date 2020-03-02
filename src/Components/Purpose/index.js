@@ -1,14 +1,15 @@
-import React from "react";
+import React, {Fragment} from "react";
+import Header from "../Organisms/Header";
+import Content from "../Organisms/Content";
+// import {Route} from "react-router-dom";
 
 export default class Purpose extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    // }
     render() {
         return(
-            <div>
-
-            </div>
+            <Fragment>
+                <Header/>
+                <Content/>
+            </Fragment>
         )
     }
 }

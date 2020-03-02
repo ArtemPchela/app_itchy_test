@@ -24,8 +24,8 @@
       @media(max-width: 1199px)  {
         padding: 0;
       }
-      @media(max-width: 991px){
-
+      @media(max-width: 991px) {
+        padding: 0;
       }
     }
     &_secondary {
@@ -34,7 +34,8 @@
   }
 
   &_image {
-    max-width: 100%;
+    width: 459px;
+    height: 344px;
   }
 
   &_text {

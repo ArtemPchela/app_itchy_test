@@ -1,5 +1,5 @@
 .nav {
-  display: flex;
+  justify-self: end;
 
   &_item {
     margin-left: 46px;
@@ -8,6 +8,12 @@
     line-height: 24px;
     font-size: 18px;
   }
+
+  }
+
+
+@media screen and (min-width: 776px) {
+  .nav {
+    //display: none;
+  }
 }
-
-

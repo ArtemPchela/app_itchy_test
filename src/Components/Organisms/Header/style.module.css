@@ -1,22 +1,18 @@
 .header {
   padding: 36px 25px 0 45px;
-  &_nav_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__logo {
-    width: 90px;
-    //justify-self: start;
-
-    &_text {
-      font-size: 26px;
-      font-weight: 700;
-    }
-  }
 }
-
+.header_nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 90px;
+}
+.header__logo_text {
+  font-size: 26px;
+  font-weight: 700;
+}
 
 /*burger*/
 .nav_menu_wrapper {
@@ -26,7 +22,7 @@
   align-items: center;
   align-self: center;
   flex: 0 auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -37,7 +33,7 @@
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 26px;
   font-weight: 700;
@@ -62,12 +58,11 @@
   padding: 20px;
   text-align: left;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .mobile_menu {
   display: flex;
 }
 
-
-
+/*# sourceMappingURL=style.module.css.map */

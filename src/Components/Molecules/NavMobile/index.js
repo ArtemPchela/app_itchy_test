@@ -20,7 +20,7 @@ class NavMobile extends Component {
     render() {
         const {links} = this.props;
         return (
-            <div className={`${styles.mobile_nav} d-md-none`}>
+            <div className={`${styles.mobile_nav}`}>
                     <div className={`${styles.mobile_menu} ${this.state.isMobileNavOpen ? styles.open : ""}`}>
                         <div className={`${styles.mobile_close_icon_wrapper}`}>
                             <div onClick={this.mobileOpenHandler}>
@@ -59,7 +59,6 @@ class NavMobile extends Component {
                             </div>
                         </div>
                     </div>
-                {/*</div>*/}
             </div>
         )
     }

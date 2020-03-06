@@ -1,0 +1,29 @@
+.main {
+  display: grid;
+  width: 960px;
+  margin: 0 auto;
+  grid-template-columns: 470px 1fr;
+}
+.main .main_intro {
+  align-self: center;
+}
+.main .main_intro_title {
+  font: Bold 58px/77px Poppins;
+  letter-spacing: 0.58px;
+}
+.main .main_intro_title_text {
+  font: Italic 22px/29px Poppins;
+  letter-spacing: 0.88px;
+  margin-top: 17px;
+}
+.main .phone_wrapper {
+  display: grid;
+  justify-self: self-start;
+}
+.main .phone_wrapper .phone_img {
+  width: 520px;
+  height: auto;
+  justify-self: self-start;
+}
+
+/*# sourceMappingURL=style.module.css.map */

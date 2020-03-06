@@ -1,0 +1,135 @@
+.header {
+  min-height: 36px;
+  padding: 36px 0 500px;
+  background: url("../../../images/bubbles@3x.png") 57% 84% no-repeat;
+  background-size: 120%;
+  position: relative;
+}
+.header__nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+@media (max-width: 1199px) {
+  .header__nav_wrapper {
+    padding: 15px 25px;
+  }
+}
+@media (max-width: 991px) {
+  .header__nav_wrapper {
+    padding: 15px 25px;
+  }
+}
+.header__logo {
+  width: 90px;
+}
+.header__logo_text {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.content_intro {
+  padding: 255px 0 0 134px;
+}
+.content_intro_title {
+  font: Bold 58px/77px Poppins;
+  letter-spacing: 0.58px;
+}
+.content_intro_title_text {
+  font: Italic 22px/29px Poppins;
+  letter-spacing: 0.88px;
+  margin-top: 17px;
+}
+
+@media (min-width: 1200px) {
+  .content_intro {
+    padding: 255px 0 0 110px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .content_intro {
+    padding: 255px 0 0 110px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .content_intro {
+    padding: 255px 0 0 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .content_intro {
+    padding: 255px 0 0 50px;
+  }
+}
+.phone_wrapper {
+  padding-top: 10px;
+  position: relative;
+}
+
+.phone_img {
+  width: 520px;
+  height: auto;
+  position: absolute;
+  top: 95px;
+  left: -111px;
+}
+
+/*burger*/
+.nav_menu_wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.w_nav_menu {
+  position: relative;
+  float: right;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.desktop_nav_link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: color 300ms ease-out;
+  color: #848484;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.w_nav_link {
+  position: relative;
+  vertical-align: top;
+  text-decoration: none;
+  color: #222222;
+  padding: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile_menu {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.module.css.map */

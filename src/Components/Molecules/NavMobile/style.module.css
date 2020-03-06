@@ -1,7 +1,7 @@
-.nav_mobile {
-  display: grid;
+.nav_item {
+  display: flex;
 }
-.nav_mobile .nav_item_mobile {
+.nav_item .nav_item_mobile {
   margin-left: 46px;
   letter-spacing: 0.18px;
   font-family: "Poppins", sans-serif;
@@ -10,7 +10,7 @@
   display: initial;
   padding-bottom: 36px;
 }
-.nav_mobile .nav_item_mobile:hover {
+.nav_item .nav_item_mobile:hover {
   color: #F4AC83;
 }
 
@@ -30,6 +30,11 @@
   grid-template-rows: auto auto;
   background-color: transparent;
   display: none;
+}
+@media (max-width: 767px) {
+  .mobile_nav {
+    display: block;
+  }
 }
 @media screen and (max-width: 1199px) {
   .mobile_nav .mobile_menu {

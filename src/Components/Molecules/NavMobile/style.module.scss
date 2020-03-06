@@ -1,5 +1,5 @@
-.nav_mobile {
-  display: grid;
+.nav_item {
+  display: flex;
 
 
   .nav_item_mobile {
@@ -35,6 +35,9 @@
   background-color: transparent;
   display: none;
 
+  @media (max-width: 767px) {
+    display: block;
+  }
 
   @media screen and (max-width: 1199px) {
     .mobile_menu {

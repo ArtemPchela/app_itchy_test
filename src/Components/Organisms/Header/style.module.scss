@@ -1,5 +1,11 @@
-.header {
-  padding: 36px 25px 0 45px;
+  .header {
+    display: grid;
+    align-items: center;
+    padding: 36px 25px 0 45px;
+    grid-template-columns: 100px 1fr;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
   &_nav_wrapper {
     display: flex;
     justify-content: space-between;
@@ -8,7 +14,9 @@
 
   &__logo {
     width: 90px;
-    //justify-self: start;
+    @media (max-width: 767px) {
+      display: none;
+    }
 
     &_text {
       font-size: 26px;
@@ -16,7 +24,6 @@
     }
   }
 }
-
 
 /*burger*/
 .nav_menu_wrapper {

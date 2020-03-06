@@ -11,7 +11,7 @@ class Header extends Component {
     render() {
         return (
             <header className={`${styles.header}`}>
-                <div className={`${styles.header_nav_wrapper}`}>
+            {/*    <div className={`${styles.header_nav_wrapper}`}>*/}
                     <div className={`${styles.header__logo}`}>
                         <Link className={`${styles.header__logo_text}`} to="/">
                             itchy
@@ -19,7 +19,7 @@ class Header extends Component {
                     </div>
                     <Nav links={links}/>
                     <NavMobile links={links}/>
-                </div>
+                {/*</div>*/}
             </header>
         )
     }

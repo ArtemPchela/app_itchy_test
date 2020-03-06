@@ -1,11 +1,25 @@
 .main {
-  display: grid;
-  width: 960px;
-  margin: 0 auto;
-  grid-template-columns: 470px 1fr;
+  padding-top: 180px;
+  background-image: url("../../../images/bubbles@3x.png");
+  background-size: 120%;
+  background-position: 50% 100%;
+  padding-bottom: 140px;
+
+  &_wrapper {
+    display: grid;
+    grid-template-columns: 462px 1fr;
+    grid-area: row;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
 
   .main_intro {
     align-self: center;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
     &_title {
       font: Bold 58px/77px Poppins;
       letter-spacing: 0.58px;
@@ -19,13 +33,12 @@
   }
 
   .phone_wrapper {
-    display: grid;
-    justify-self: self-start;
-
+    @media (max-width: 767px) {
+      display: none;
+    }
     .phone_img {
       width: 520px;
       height: auto;
-      justify-self: self-start;
     }
   }
 }

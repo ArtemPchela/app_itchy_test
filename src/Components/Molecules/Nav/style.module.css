@@ -1,6 +1,11 @@
 .nav {
   justify-self: end;
 }
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 .nav_item {
   margin-left: 46px;
   letter-spacing: 0.18px;

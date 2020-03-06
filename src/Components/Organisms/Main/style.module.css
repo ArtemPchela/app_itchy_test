@@ -1,11 +1,27 @@
 .main {
+  padding-top: 180px;
+  background-image: url("../../../images/bubbles@3x.png");
+  background-size: 120%;
+  background-position: 50% 100%;
+  padding-bottom: 140px;
+}
+.main_wrapper {
   display: grid;
-  width: 960px;
-  margin: 0 auto;
-  grid-template-columns: 470px 1fr;
+  grid-template-columns: 462px 1fr;
+  grid-area: row;
+}
+@media (max-width: 767px) {
+  .main_wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .main .main_intro {
   align-self: center;
+}
+@media (max-width: 767px) {
+  .main .main_intro {
+    text-align: center;
+  }
 }
 .main .main_intro_title {
   font: Bold 58px/77px Poppins;
@@ -16,14 +32,14 @@
   letter-spacing: 0.88px;
   margin-top: 17px;
 }
-.main .phone_wrapper {
-  display: grid;
-  justify-self: self-start;
+@media (max-width: 767px) {
+  .main .phone_wrapper {
+    display: none;
+  }
 }
 .main .phone_wrapper .phone_img {
   width: 520px;
   height: auto;
-  justify-self: self-start;
 }
 
 /*# sourceMappingURL=style.module.css.map */

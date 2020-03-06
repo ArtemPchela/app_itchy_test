@@ -30,7 +30,7 @@ class NavMobile extends Component {
                             </div>
                         </div>
                         <div className={`${styles.mobile_links_wrapper}`}>
-                            <nav className={`${styles.nav_mobile}`}>
+                            <nav className={`${styles.nav_item}`}>
                                 {links.map(element =>
                                     <Link to={element.href}
                                           key={element.href}

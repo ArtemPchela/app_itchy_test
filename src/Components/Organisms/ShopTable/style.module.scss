@@ -1,0 +1,105 @@
+.table_wrapper {
+  display: grid;
+  padding: 150px 0 15px;
+  @media (max-width: 991px) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
+}
+
+.table {
+  border-spacing: 0;
+  border: 1px solid black;
+
+  .tr {
+    &:last-child {
+      .td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .th,
+  .td {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.pagination {
+  place-self: center;
+  padding: 1rem;
+  @media (max-width: 991px) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding-left: 0;
+  }
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
+
+  button {
+    color: black;
+    margin: 0 0.25rem;
+    border-radius: 3px;
+    border: 2px solid #F4AC83;
+    padding: 0 5px;
+  }
+
+  .page_index {
+    padding-top: 10px;
+    @media (max-width: 991px) {
+      justify-self: center;
+    }
+    @media (max-width: 767px) {
+      justify-self: center;
+    }
+    @media (max-width: 575px) {
+      justify-self: center;
+    }
+  }
+
+  input {
+    color: black;
+    margin: 0 0.25rem;
+    border-radius: 3px;
+    border: 2px solid #F4AC83;
+  }
+
+  .pagination_input {
+    padding-top: 10px;
+    @media (max-width: 991px) {
+      justify-self: center;
+      padding-top: 10px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 10px;
+    }
+  }
+
+
+  select {
+    color: black;
+    margin: 0 0.25rem;
+    @media (max-width: 767px) {
+      margin: 0 0.15rem;
+
+    }
+    @media (max-width: 575px) {
+      margin: 0 0.1rem;
+    }
+  }
+}

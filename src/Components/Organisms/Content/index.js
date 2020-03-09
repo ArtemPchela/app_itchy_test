@@ -11,7 +11,7 @@ class Content extends Component {
                 <div className={`${styles.content_background}`}>
                     <img src={background} className={`${styles.content_background_top}`} alt='back'/>
                     <div className={`${styles.content_background_bottom}`}/>
-                 </div>
+                </div>
                 <div className="container">
                     <div className={`${styles.content_row}`}>
                         <div className={`${styles.content_image_wrapper} ${styles.content_image_wrapper_primary}`}>

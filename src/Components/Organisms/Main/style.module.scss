@@ -4,41 +4,71 @@
   background-size: 120%;
   background-position: 50% 100%;
   padding-bottom: 140px;
+  margin-top: -65px;
 
   &_wrapper {
     display: grid;
     grid-template-columns: 462px 1fr;
     grid-area: row;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       grid-template-columns: 1fr;
+      text-align: center;
     }
   }
 
   .main_intro {
     align-self: center;
-    @media (max-width: 767px) {
-      text-align: center;
-    }
 
     &_title {
       font: Bold 58px/77px Poppins;
       letter-spacing: 0.58px;
+      @media (max-width: 991px) {
+        font: Bold 54px/70px Poppins;
+        letter-spacing: 0.58px;
+      }
+      @media (max-width: 767px) {
+        font: Bold 51px/66px Poppins;
+        letter-spacing: 0.58px;
+      }
+      @media (max-width: 575px) {
+        font: Bold 46px/61px Poppins;
+        letter-spacing: 0.58px;
+      }
 
       &_text {
         font: Italic 22px/29px Poppins;
         letter-spacing: 0.88px;
         margin-top: 17px;
+        @media (max-width: 991px) {
+          font: Italic 20px/27px Poppins;
+          margin-top: 15px;
+        }
+        @media (max-width: 767px) {
+          font: Italic 17px/16px Poppins;
+          margin-top: 14px;
+        }
+        @media (max-width: 575px) {
+          font: Italic 15px/14px Poppins;
+          margin-top: 14px;
+        }
       }
     }
   }
 
   .phone_wrapper {
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       display: none;
     }
+
     .phone_img {
-      width: 520px;
+      width: 100%;
       height: auto;
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+      }
     }
   }
 }

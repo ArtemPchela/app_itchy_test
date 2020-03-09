@@ -3,6 +3,7 @@
   @media (max-width: 767px) {
     display: none;
   }
+
   &_item {
     margin-left: 46px;
     letter-spacing: 0.18px;
@@ -10,18 +11,9 @@
     line-height: 24px;
     font-size: 18px;
   }
-
 }
 
-
-
-
-//xs: 0,
-//// Small screen / phone
-//sm: 576px,
-//         // Medium screen / tablet
-//       md: 768px,
-//                // Large screen / desktop
-//              lg: 992px,
-//                       // Extra large screen / wide desktop
-//                     xl: 1200px
+.nav_item:hover {
+  color: #FFBA92;
+  transition: 0.5s;
+}

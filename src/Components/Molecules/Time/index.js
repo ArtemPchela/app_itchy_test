@@ -1,29 +1,26 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "./style.module.scss";
 
-class Time extends Component {
-    constructor(props) {
-        super(props);
-            this.state = {time: new Date()};
+export default function Time() {
+
+    const [date, setDate] = useState(new Date());
+
+
+    useEffect(() => {
+        const timerID = setInterval(() => tick(), 1000);
+        return function cleanup() {
+            clearInterval(timerID);
+        };
+    });
+
+    function tick() {
+        setDate(new Date());
     }
 
-     currentTime() {
-        this.setState({
-           time: new Date()
-        })
-    };
-
-    UNSAFE_componentWillMount() {
-        setInterval(() => this.currentTime(), 1000);
-    }
-
-    render() {
-        return(
-            <div className={`${styles.time}`}>
-                <span>{this.state.time.toLocaleTimeString()}</span>
-            </div>
-        )
-    }
+    return (
+        <div className={`${styles.time}`}>
+            <span>{date.toLocaleTimeString()}</span>
+        </div>
+    );
 }
 
-export default Time;

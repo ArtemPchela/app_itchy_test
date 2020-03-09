@@ -1,15 +1,27 @@
-  .header {
-    display: grid;
-    align-items: center;
-    padding: 36px 25px 0 45px;
-    grid-template-columns: 100px 1fr;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+.header {
+  display: grid;
+  align-items: center;
+  padding: 0 25px 0 45px;
+  grid-template-columns: 100px 1fr;
+  width: 100%;
+  position: sticky;
+  top: 36px;
+  z-index: 10;
+  transition: 0.7s;
+
+  &_visible {
+    background-color: #5756b1ab;
+    padding: 0 25px 0 45px;
+    top: 0;
+    color: black;
+  }
+
   &_nav_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
   }
 
   &__logo {
@@ -75,6 +87,4 @@
 .mobile_menu {
   display: flex;
 }
-
-
 
